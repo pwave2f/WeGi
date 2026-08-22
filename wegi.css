@@ -314,9 +314,12 @@ nav.primary-nav a:hover::after{ width:100%; }
   position:absolute; inset:0; margin:auto; width:64%; height:64%;
   display:flex; align-items:center; justify-content:center;
 }
-.orbit-frame .logo-core img{ width:100%; filter:drop-shadow(0 14px 30px rgba(18,21,74,.25)); }
+.orbit-frame .logo-core img{
+  width:100%; height:100%; object-fit:contain; display:block;
+  filter:drop-shadow(0 14px 30px rgba(18,21,74,.25));
+}
 .orbit-dot{ position:absolute; width:9px; height:9px; border-radius:50%; background:var(--electric); box-shadow:0 0 0 4px rgba(77,93,251,.18); }
-.orbit-dot.d1{ top:-4px; left:50%; }
+.orbit-dot.d1{ top:-4px; left:50%; transform:translateX(-50%); }
 .orbit-dot.d2{ bottom:6%; right:2%; background:var(--navy-deep); }
 .orbit-dot.d3{ top:20%; left:-4px; background:var(--navy-mid); }
 
