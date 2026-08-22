@@ -482,6 +482,14 @@ nav.primary-nav a:hover::after{ width:100%; }
 .project-info h3{ font-family:var(--font-display); font-size:1.7rem; color:var(--navy-deep); margin:0; }
 .project-info p{ color:#3a3f6b; line-height:1.65; margin:0; max-width:44ch; }
 .tech-list{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.4rem; }
+.project-link{
+  display:inline-flex; align-items:center; gap:.4em;
+  font-family:var(--font-mono); font-size:.76rem; letter-spacing:.05em;
+  color:var(--electric); text-decoration:none; text-transform:uppercase;
+  margin-top:.4rem; width:fit-content;
+  transition:color .3s var(--ease), gap .3s var(--ease);
+}
+.project-link:hover{ color:var(--navy-deep); gap:.65em; }
 
 @media(max-width:860px){
   .project-card{ grid-template-columns:1fr; }
@@ -564,12 +572,13 @@ nav.primary-nav a:hover::after{ width:100%; }
 }
 .cta-final p{ font-size:1.05rem; color:#3a3f6b; max-width:46ch; margin:0 auto 2.4rem; line-height:1.7; }
 .cta-orbit{ position:absolute; inset:0; pointer-events:none; }
+.cta-actions{ display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
 
 /* =========================================================
    FOOTER
    ========================================================= */
 footer{ background:var(--navy-deep); color:var(--cream-3); padding:5rem 0 2rem; }
-.footer-top{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:2.5rem; padding-bottom:3rem; border-bottom:1px solid rgba(255,255,255,.14); }
+.footer-top{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:0.09rem; padding-bottom:0.5rem; border-bottom:1px solid rgba(255,255,255,.14); }
 .footer-brand{ display:flex; align-items:center; gap:.7rem; }
 .footer-brand img{ width:40px; height:40px; }
 .footer-brand .name{ font-family:var(--font-display); font-size:1.1rem; }
